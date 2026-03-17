@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdoc_bizon_mn=globalThis.webpackChunkdoc_bizon_mn||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);

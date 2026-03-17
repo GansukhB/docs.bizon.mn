@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Bizon',
+  tagline: 'Business Management Documentation',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -41,6 +41,26 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          // sidebarItemsGenerator: async ({defaultSidebarItemsGenerator, ...args}) => {
+          //   const sidebarItems = await defaultSidebarItemsGenerator(args);
+          //   const sortItems = (items: any[]): any[] => {
+          //     const result = [...items].sort((a, b) => {
+          //       const labelA = a.label || a.id || '';
+          //       const labelB = b.label || b.id || '';
+          //       if (labelA === '' && labelB === '') return 0;
+          //       if (labelA === '') return 1;
+          //       if (labelB === '') return -1;
+          //       return labelA.localeCompare(labelB, 'mn');
+          //     });
+          //     return result.map((item) => {
+          //       if (item.type === 'category') {
+          //         return {...item, items: sortItems(item.items)};
+          //       }
+          //       return item;
+          //     });
+          //   };
+          //   return sortItems(sidebarItems);
+          // },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -75,52 +95,43 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Bizon',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Bizon Logo',
+        src: 'img/bizon-admin.jpg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Заавар',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/blog', label: 'Мэдээ', position: 'left'},
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Заавар',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Заавар',
+              to: '/docs/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Холбоосууд',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Medium',
+              href: 'https://medium.com/digital-business-consulting',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/profile.php?id=61584153620641',
             },
           ],
         },
@@ -130,15 +141,11 @@ const config: Config = {
             {
               label: 'Blog',
               to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Devops.mn.`,
     },
     prism: {
       theme: prismThemes.github,

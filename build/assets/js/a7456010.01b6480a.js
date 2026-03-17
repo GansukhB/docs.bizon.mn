@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdoc_bizon_mn=globalThis.webpackChunkdoc_bizon_mn||[]).push([[1235],{8552(n){n.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

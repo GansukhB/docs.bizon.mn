@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdoc_bizon_mn=globalThis.webpackChunkdoc_bizon_mn||[]).push([[8121],{8070(l){l.exports=JSON.parse('{"tags":[{"label":"launch","permalink":"/blog/tags/launch","count":1},{"label":"platform","permalink":"/blog/tags/platform","count":1},{"label":"bizon","permalink":"/blog/tags/bizon","count":1}]}')}}]);
