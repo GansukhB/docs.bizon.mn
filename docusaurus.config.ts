@@ -118,7 +118,7 @@ const config: Config = {
           items: [
             {
               label: 'Заавар',
-              to: '/docs/',
+              to: '/docs/registration/signup',
             },
           ],
         },
